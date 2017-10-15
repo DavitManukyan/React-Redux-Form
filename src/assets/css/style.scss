@@ -1,0 +1,386 @@
+@import 'fontello.css';
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 340px;
+    max-height: 460px;
+    border: 1px solid #DFDFDF;
+    border-radius: 5px;
+    color: #7C828F;
+    overflow: hidden;
+}
+
+.form-in input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+    color: #7589C4;
+    font-size: 18px;
+    padding: 0 5px;
+    height: 35px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #C2C2C2;
+}
+
+.hr {
+    width: 100%;
+    height: 8px;
+    display: inline-block;
+    border-top: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.hr1:before,
+.hr2:before,
+.hr3:before {
+    content: "";
+    height: 8px;
+    background: #4A90E2;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hr1:before {
+    width: 33%;
+    animation-name: hrWidth0;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}
+
+.hr2:before {
+    width: 66%;
+    animation-name: hrWidth1;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}
+
+.hr3:before {
+    width: 100%;
+    animation-name: hrWidth2;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}
+
+.blue {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #67CCFB;
+}
+
+
+.form-in .form-p {
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+}
+
+.next {
+    width: 70px;
+    font-size: 18px;
+    text-align: right;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: #4B90E4;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.next-div {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    font-size: 18px;
+    border-top: 1px solid #DFDFDF !important;
+    border: none;
+    color: #4B90E4;
+}
+
+
+
+.form-p.input-date,
+.form-p.input-gender {
+    text-align: center;
+    color: #646CAF;
+}
+
+.date-of-birth input,
+.gender button {
+    display: inline;
+    width: 30%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    height: 35px;
+}
+
+.gender button {
+    color: #8D7675;
+    font-weight: bold;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #DFDFDF;
+    -webkit-transition-duration: 0.3s;
+    /* Safari */
+    transition-duration: 0.3s;
+}
+
+.gender button:hover {
+    background: #4A90E2;
+    color: #fff;
+}
+
+.gender button:checked {
+    background: #4A90E2;
+    color: #ccc;
+}
+
+.gender button:active {
+    background: #4A90E2;
+    color: #fff;
+}
+
+.date-of-birth,
+.gender {
+    margin-bottom: 20px;
+}
+
+.date-of-birth input:first-child,
+.gender button:first-child {
+    margin-left: 5%;
+}
+
+select {
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+select:hover {
+    background: #F3F3F3;
+}
+
+.custum-select {
+    width: 90%;
+    margin-left: 5%;
+    height: 35px;
+    overflow: hidden;
+    border: 1px solid #DFDFDF;
+    position: relative;
+}
+
+.down {
+    position: absolute;
+    right: 0;
+    background: #fff;
+    z-index: 3;
+    width: 25px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.down:after {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.back,
+.back1 {
+    position: absolute;
+    left: 10px;
+    color: #C3C6C6;
+    cursor: pointer;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.back::before,
+.back1::before {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+}
+
+.back1 {
+    bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+    color:#67CCFB;
+}
+
+.end {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.ok {
+    width: 150px;
+    height: 150px;
+    background: #B8E986;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    display: flex;
+}
+
+.icon-ok {
+    width: 100%;
+    display: block;
+    text-align: center;
+    align-self: center;
+    color: #fff;
+    font-size: 90px;
+    font-weight: normal !important
+}
+
+
+.go {
+    height: 40px;
+    width: 160px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #67CCFB;
+    border-radius: 3px;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    cursor: pointer;
+    color:#67CCFB;
+}
+
+.go::before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-right-big {
+    padding-left: 5px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+
+.clearfix {
+    display: inline-block;
+}
+
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+@keyframes hrWidth0 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 33%;
+    }
+}
+
+@keyframes hrWidth1 {
+    0% {
+        width: 33%;
+    }
+    100% {
+        width: 66%;
+    }
+}
+
+@keyframes hrWidth2 {
+    0% {
+        width: 66%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.red_error {
+    color: red !important;
+    transition: all 2s;
+}
+
+.end_div{
+    padding:10px;
+}
+
+.end_div p{
+   font-weight:bold;
+   color:#67CCFB;
+   padding-top:15px;
+   font-size:18px;
+}
+
+.end_div p span{
+   font-weight:normal;
+   padding-left:10px;
+   color:#000;
+}
